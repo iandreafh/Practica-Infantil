@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reina Disfraces</title>
+        <link rel="shortcut icon" href="../Img/logo2.png">
+      <link rel="stylesheet" type="text/css" href="estilo.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!--Fuentes-->
+        <link href="https://fonts.googleapis.com/css?family=Concert+One|Gochi+Hand|Patrick+Hand|Patua+One&display=swap" rel="stylesheet">
+
+        <!--
+            font-family: 'Patua One', cursive; Si
+            font-family: 'Concert One', cursive;
+            font-family: 'Patrick Hand', cursive;
+            font-family: 'Gochi Hand', cursive;
+        -->
+
+        <script type="text/javascript">
+      
+
+          function enable() {
+            var check1 = document.getElementById("check1");
+            var check2 = document.getElementById("check2");
+
+            if(check1.checked)
+            {
+              check2.removeAttribute("disabled");
+            }
+            else
+            {
+              check2.setAttribute("disabled", "true");
+              check2.checked = false;
+            }
+          }
+
+
+          (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+          }, false);
+          });
+          }, false);
+          })();
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron jumbotron-fluid text-center" style="color: lightgrey; background-color: black; background-image: url('../Img/space.gif'); margin: 0px; padding: 12px">
+            <div class="container logo">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="inicio" src="../Img/crown (1).png" style="width: 6em">
+                </a>
+                <h1>Reina Disfraces</h1>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="padding: 0.3em">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html" style="padding: 0px">
+                <img class="inicio" src="../Img/crown (2).png" alt="logo" style="width: 3em;">
+              </a>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+              <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                  <ul class="navbar-nav" style="font-family: 'Patua One', cursive;  align-items: center; padding: 0px;">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="bebes.html">
+                        <img class="d-none d-md-block float-left" src="../Img/bebe2.png">Bebés
+                      </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="pequeños.html">
+                        <img class="d-none d-md-block float-left" src="../Img/niño.png">De 3-6 años
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mayores.html">
+                        <img class="d-none d-md-block float-left" src="../Img/mayor.png">De 7-12 años
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <img class="d-none d-md-block float-left" src="../Img/mapa.png">Cómo llegar
+                      </a>
+                    </li>
+                  </ul>
+               </div>
+            </div>
+        </nav>
+
+
+        
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.088881954521!2d-5.925964185343448!3d37.293027247503346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd127043dc35fc5d%3A0x7d25a90297f11c2!2sThe%20Magic%20Store!5e0!3m2!1ses!2ses!4v1572886317604!5m2!1ses!2ses" frameborder="0" style="border:0; width: 100%; height: 100%; min-height: 350px; padding: 2em;" allowfullscreen=""></iframe>
+            </div>
+            <!--Div que solo aparece en xs y sm cuando el form se coloca debajo del mapa, para que el enlace mande directamente al form sin tapar la cabecera de Contacto con el nav-->
+            <div id="contact" class="d-block d-md-none col-12" style="height: 3em"></div>
+            <div class="col-12 col-md-5 justify-content-center" style="padding: 2em">
+              <h3>Contacto</h3>
+              <form class="needs-validation" novalidate>
+                <div class="row">
+                  <div class="col-12 col-md-7">
+                    <div class="form-group">
+                      <label class="mr-sm-2" for="usr">Nombre*</label>
+                      <input type="text" class="form-control mb-3 mr-sm-2" id="nombre" required>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-5">
+                    <div class="form-group">
+                      <label class="d-none d-md-block d-lg-none mr-sm-2" for="usr">C.P.</label>
+                      <label class="d-md-none d-lg-block mr-sm-2" for="usr">Código Postal</label>
+                      <input type="text" class="form-control mb-3 mr-sm-2" id="cp">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="mr-sm-2" for="usr">Correo electrónico*</label>
+                      <input type="email" name="email" id="email" class="form-control" placeholder="Introduzca un email válido" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 col-md-12 col-lg-5 mb-3">
+                    <label class="mr-sm-2" for="usr">Categoría*</label>
+                    <select name="categoria" class="custom-select mr-sm-2" required>
+                      <option></option>
+                      <option value="volvo">Bebés</option>
+                      <option value="fiat">De 3-6 años</option>
+                      <option value="audi">De 7-12 años</option>
+                    </select>
+                  </div>
+                  <div class="col-8 col-md-12 col-lg-7">
+                    <label class="mr-sm-2" for="usr">Disfraz*</label>
+                    <input type="text" class="form-control mb-3 mr-sm-2" id="disfraz" required>
+                  </div>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="check1" name="option2" value="something" onchange="enable()"><label class="custom-control-label" for="check1">Acepto que <em>Reina Disfraces</em> me envíe a este correo electrónico promociones y ofertas especiales.</label>
+                </div>
+                <!--Este checkbox solo se activa si selecciona el anterior-->
+                <div class="custom-control custom-checkbox mb-3 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="check2" disabled="true"><label class="custom-control-label" for="check2">Quiero recibir por email el catálogo mensual de <em>Reina Disfraces</em>.</label>
+                </div>
+                <div class="form-group">
+                  <label class="mr-sm-2" for="comment">Comentarios</label>
+                  <textarea class="form-control mb-3" rows="5" maxlength="250" id="comment" style="height: 6em; min-height: 3em; max-height: 9em"></textarea>
+                </div>
+                <div class="col-12">
+                  <p>(*) Estos campos son obligatorios</p>
+                  <button type="submit" class="btn btn-primary float-right">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="padding: 2em; border-top: double; border-width: 0.2em; margin-top: 1em;">
+                <div class="col-9 col-md-6 footer">
+                    <img class="img-fluid mx-auto d-block d-sm-inline-block float-sm-left" src="../Img/crown (3).png">
+                    <div class="text-center" style="padding: 0.6em">
+                        <h2>Reina Disfraces</h2>
+                        <p>Avda de España, 55</p>
+                        <p>Dos Hermanas, Sevilla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body> 
+</html>
