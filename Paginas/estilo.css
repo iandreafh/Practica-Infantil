@@ -1,19 +1,16 @@
      /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
         .carousel-inner {
-            height: 7.5em;
+            height: 11em;
         }
         h1 {
-            font-size: 1.9em;
+            font-size: 2em;
         }
         h2 {
-            font-size: 1.6em;
+            font-size: 3em;
         }
         p {
             font-size: 0.8em;
-        }
-        .footer img {
-            height: 5em;
         }
     }
     /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -25,10 +22,7 @@
             font-size: 4em;
         }
         h2 {
-            font-size: 2.2em;
-        }
-        .footer img {
-            height: 8em;
+            font-size: 4em;
         }
     }
     /* Medium devices (landscape tablets, 768px and up) */
@@ -38,10 +32,6 @@
         }
         .carousel-inner {
             height: 18em;
-        }
-        .footer img {
-            height: 11em;
-            padding: 0.8em;
         }
         ul img {
             height: 27px;
@@ -54,7 +44,7 @@
             font-size: 1.5em;
         }
         .carousel-inner {
-            height: 26em;
+            height: 23em;
         }
         .footer img {
             height: 10em;
@@ -67,6 +57,9 @@
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
 
+        .carousel-inner {
+            height: 29em;
+        }
     } 
 
     .carousel-inner img {
@@ -75,6 +68,8 @@
     }
     h1 {
         font-family: 'Gochi Hand', cursive;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 7px grey, 0 0 3px darkblue;
     }
     h2 {
         font-family: 'Gochi Hand', cursive;
@@ -140,6 +135,13 @@
       padding: 5%;
       bottom: 6%;
       padding-bottom: 3%;
+    }
+
+    div.card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    div.card p{
+      color: #424242;
     }
 
     .footer {
