@@ -1,7 +1,7 @@
      /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
         .carousel-inner {
-            height: 11em;
+            height: 8.9em;
         }
         h1 {
             font-size: 2em;
