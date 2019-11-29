@@ -12,6 +12,9 @@
         p {
             font-size: 0.8em;
         }
+        .inicio {
+          visibility: hidden;
+        }
     }
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
@@ -23,6 +26,9 @@
         }
         h2 {
             font-size: 4em;
+        }
+        .inicio {
+          visibility: hidden;
         }
     }
     /* Medium devices (landscape tablets, 768px and up) */
@@ -36,6 +42,9 @@
         ul img {
             height: 27px;
             margin: 0 0.2em 0 2.3em;
+        }
+        .inicio {
+          visibility: visible;
         }
     }
     /* Large devices (laptops/desktops, 992px and up) */
@@ -52,6 +61,9 @@
         ul img {
             height: 32px;
             margin: 0 0.2em 0 2.1em;
+        }
+        .inicio {
+          opacity: 1;
         }
     }
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -80,7 +92,7 @@
     p {
         font-family: 'Patua One', cursive;
     }
-    nav img:hover, .inicio:hover {
+    nav img:hover:not(.inicio) {
       animation: shake 1.4s;
       animation-iteration-count: infinite;
     }
@@ -98,6 +110,21 @@
       100% { transform: translate(1px, -2px) rotate(-1deg); }
     }
 
+    /*Hace que la corona de icono del navbar se mueva de un lado a otro, pero desaparezca por detras de la lista*/
+    nav .inicio {
+      animation: paseito 4s infinite alternate linear;
+    }
+    @keyframes paseito {
+      0% { opacity: 1; transition: opacity; transform: translateX(0vw) scale(0.8) ; }
+      5% { opacity: 1; transition: opacity; transform: translateX(0vw) scale(1) ; }
+      45% { opacity: 1; transition: opacity; transform: translateX(18vw) ; } 
+      57% { opacity: 0; transition: opacity; transform: translateX(19vw) ; }
+      66% { opacity: 0; transition: opacity; transform: translateX(82vw) ; } 
+      75% { opacity: 1; transition: opacity; transform: translateX(83vw) ; }      
+      95% { opacity: 1; transition: opacity; transform: translateX(90vw) scale(1) ; }
+      100% { opacity: 1; transition: opacity; transform: translateX(90vw) scale(0.8); }
+    }
+
     .column {
       padding: 2%;
     }
@@ -109,6 +136,7 @@
       object-fit: cover;
       object-position: 50% 50%;
       margin: auto;
+      transition: all 0.5s;
     }
 
     .overlay {
@@ -124,8 +152,13 @@
       background-color: #000;
     }
 
+    /*Amplia la imagen del disfraz al hacer hover ademas de mostrar la informacion */
     .disfraces .row .column:hover .overlay {
       opacity: 0.8;
+    }
+
+    .disfraces .row .column:hover .disfraz {
+      transform: scale(1.1);
     }
 
     .text {
@@ -142,10 +175,4 @@
     }
     div.card p{
       color: #424242;
-    }
-
-    .footer {
-        border-style: dotted;
-        border-width: 0.3em;
-        border-radius: 0.5em;
     }
